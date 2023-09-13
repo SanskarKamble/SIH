@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
         required: true,
         enum: ["Farmer", "Consultant", "Admin"]
     }
-},{ timestamps: true });
+}, { timestamps: true });
 
 const userModel = mongoose.model("User", userSchema);
 module.exports = userModel;
